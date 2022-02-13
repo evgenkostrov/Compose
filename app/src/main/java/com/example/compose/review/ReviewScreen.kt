@@ -4,7 +4,6 @@ import com.example.compose.models.Bid
 import com.example.compose.models.NFT
 import com.example.compose.models.User
 import com.example.compose.review.components.HotBidCard
-import aguilarkevin.dev.nftmarketplace.ui.overview.components.SellerCard
 import com.example.compose.ui.theme.textWarningColor
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
@@ -20,16 +19,17 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.compose.models.Review
 
 
 @Composable
 fun OverviewScreen() {
 
-    val nftItems = listOf(
-        NFT(
-            id = "#11231",
-            title = "Fakurian of space #6",
-            owner = User(
+    val reviewItems = listOf(
+        Review(
+            id = 0,
+            date = System.currentTimeMillis().p,
+            user = User(
                 name = "Kevin Aguilar",
                 avatarUrl = "https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2021/10/25/16351831527188.jpg",
                 description = "conceptual collector"

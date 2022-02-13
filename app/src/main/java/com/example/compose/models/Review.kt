@@ -8,6 +8,6 @@ data class Review(
     val date: Date,
     val ratingReview:Int,
     val ratingProduct:Int,
-    val reviewString: String,
+    val reviewDescription: String,
     val reviewContent: List<ReviewContent>
 )
