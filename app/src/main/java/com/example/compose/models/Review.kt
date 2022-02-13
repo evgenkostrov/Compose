@@ -5,7 +5,7 @@ import java.util.*
 data class Review(
     val id: Int,
     val user: User,
-    val date: Date,
+    val date: String,
     val ratingReview:Int,
     val ratingProduct:Int,
     val reviewDescription: String,
