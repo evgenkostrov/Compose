@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.compose.review.ReviewScreen
 import com.example.compose.ui.theme.ComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,16 +21,16 @@ class MainActivity : ComponentActivity() {
         setContent {
             ComposeTheme {
                 // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
-                    Greeting("Android")
-                }
+//                Surface(
+//                    modifier = Modifier.fillMaxSize(),
+//                    color = MaterialTheme.colors.background
+//                ) {
+//                    Greeting("Android")
+//                }
 
                 Box(modifier = Modifier.fillMaxSize(),
                     ) {
-                    MainScreen()
+                    ReviewScreen()
 
                 }
 
@@ -59,7 +60,7 @@ fun DefaultPreview() {
             modifier = Modifier.fillMaxSize(),
             contentAlignment = Alignment.TopCenter
         ) {
-            MainScreen()
+            ReviewScreen()
 
         }
     }

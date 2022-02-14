@@ -38,6 +38,9 @@ fun ReviewCard(review: Review) {
                 .padding(14.dp),
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
+
+
+
             GlideImage(
                 imageModel = review.user.avatarUrl,
                 contentScale = ContentScale.Crop,
