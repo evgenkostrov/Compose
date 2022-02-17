@@ -48,12 +48,6 @@ fun MainScreen() {
                 ),
                 elevation = 10.dp
             ) {}
-//            Spacer(modifier = Modifier.border(width = 5.dp, brush = Brush.horizontalGradient(
-//                listOf(
-//                    Color(0xFFC4A0F4),
-//                    Color(0xFFCF4CB9),
-//                    Color(0xFFE60B41)
-//                ))
 
             Card(
                 modifier = Modifier
